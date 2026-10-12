@@ -1,9 +1,19 @@
 const container = document.getElementById("container");
-const audio1 = document.getElementById("audio1");
-const audio2 = document.getElementById("audio2");
+const happybirthday = document.getElementById("happybirthday");
+const muli = document.getElementById("muli");
+const playButton = document.getElementById("playButton");
 
+playButton.addEventListener("click", function() {
+    container.style.display = "block";
+    happybirthday.loop = true;
+    happybirthday.play();
+    playButton.style.display = "none";
+});
 
 container.addEventListener("click", function() {
+
+    document.getElementById("playButton").style.display = "none";
+
     container.innerHTML = "I MISS U";
     container.style.color = "#F06292";
     container.style.fontFamily = "Inter";
@@ -12,6 +22,6 @@ container.addEventListener("click", function() {
     container.style.Width = "100%";
     container.style.margin = "0 25px";
 
-    audio1.play();
-    audio2.pause();
+    muli.play();
+    happybirthday.pause();
 });
