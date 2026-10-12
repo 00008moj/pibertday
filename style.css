@@ -1,0 +1,43 @@
+body {
+    background-color: #FCE4EC;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    text-align: center;
+    transform: translateY(-25px);
+    cursor: pointer;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+#text {
+    font-family: Inter;
+    font-weight: bold;
+    color: #F06292;
+}
+
+#cake {
+    width: 320px;
+    margin: 0 100px;
+    filter:
+        drop-shadow(0 1px 2px rgba(0, 0, 0, 0.05))
+        drop-shadow(0 4px 12px rgba(0, 0, 0, 0.05))
+        drop-shadow(0 12px 24px rgba(0, 0, 0, 0.05));
+}
+
+@media (max-width: 600px) {
+    #cake {
+        width: 100%;
+        margin: 0 100px;
+}
+}
+ audio {
+    display: n;
+ }
