@@ -14,7 +14,7 @@ container.addEventListener("click", function() {
 
     document.getElementById("playButton").style.display = "none";
 
-    container.innerHTML = "I MISS U";
+    container.innerHTML = "i miss u";
     container.style.color = "#F06292";
     container.style.fontFamily = "Inter";
     container.style.fontWeight = "bold";
